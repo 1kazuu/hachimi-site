@@ -26,9 +26,11 @@ This happens because there is a mismatch between the game's sprite textures and 
     - On Android/some devices, you *might* also need to delete the `atlas` folder to let it update correctly.
 1. If no update was found, your translation source is out of date. Just wait for an update, or check in with the source.
     - <small>If it's close to a game update, source maintainers will likely be working on it. Please check if they're already aware before bothering them.</small>
+1. Your translation source might be entirely inactive. This could indicate you're still using an old source from the original Hachimi.
+Make sure you're using Hachimi Edge, then open its menu and go through the `First time setup` again. 
+1. The list of sources itself could be outdated, particularly if you upgraded straight from old Hachimi. In this case, you can use `Restore Defaults` to reset it to the latest bundled one. 
+    - ⚠️ Warning: This will reset all settings.  
 
-Your translation source might also be inactive. This could indicate you're still using an old source from the original Hachimi.
-Make sure you're using Hachimi Edge, then open its menu and go through the `First time setup` again.  
 If no active source for your language exists, you can check `Menu` -> `Config Editor` -> `Disable translations` if needed.
 
 ### Something isn't translated
