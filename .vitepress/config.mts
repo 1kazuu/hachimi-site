@@ -36,6 +36,7 @@ const commonSidebarConfig: VitePressSidebarOptions = {
     'translation-guide',
     'welcome.md',
     'translation-system.md',
+    'repo-config.md',
     'translating.md',
     'using-zokuzoku.md',
     'using-umatl.md'
