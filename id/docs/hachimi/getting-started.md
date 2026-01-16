@@ -211,7 +211,7 @@ Unduh Zygisk zip terbaru dari [laman rilis](https://github.com/Hachimi-Hachimi/H
 ## Setup Pertama Kali
 Saat meluncurkan game untuk pertama kali setelah menginstal Hachimi, kamu akan disambut dengan dialog berikut:
 
-![First Time Setup](/assets/id/first-time-setup.png)
+![First Time Setup](/assets/id/first-time-setup.webp)
 
 ::: Peringatan
 Jika kamu tidak melihatnya setelah memperbarui ke Edge untuk pertama kali, buka dari menu Hachimi dan selesaikan proses pengaturannya. Jika tidak, terjemahan akan menjadi usang dan bisa menyebabkan masalah tekstur yang rusak

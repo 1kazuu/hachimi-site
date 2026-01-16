@@ -7,7 +7,7 @@ title: Tentang
 
 Mod terjemahan dan peningkatan game UM:PD.
 
-![Tangkapan Layar](/assets/id/screenshot.png)
+![Tangkapan Layar](/assets/id/screenshot.webp)
 
 # Fitur
 - **Pemformatan teks canggih:** Hachimi hadir dengan fitur terjemahan canggih yang membuat hasil terjemahan terasa lebih alami (bentuk jamak, angka urutan, dll.) serta mencegah kerusakan pada UI. Juga mendukung penerjemahan sebagian besar komponen dalam game; tanpa perlu patching aset manual!

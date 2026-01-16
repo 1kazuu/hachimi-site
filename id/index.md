@@ -58,8 +58,8 @@ Sumber terjemahan diindeks dari berbagai proyek komunitas terpisah. Hachimi meny
 ## Tangkapan Layar {#screenshots}
 
 <div class="gallery">
-  <img class="item grid-4" src="/assets/id/screen1.png" alt="Beranda">
-  <img class="item grid-4" src="/assets/id/screen2.png" alt="Layar latihan">
-  <img class="item grid-4" src="/assets/id/screen3.png" alt="Event latihan">
-  <img class="item grid-4" src="/assets/id/screen4.png" alt="Cerita karakter">
+  <img class="item grid-4" src="/assets/id/screen1.webp" alt="Beranda">
+  <img class="item grid-4" src="/assets/id/screen2.webp" alt="Layar latihan">
+  <img class="item grid-4" src="/assets/id/screen3.webp" alt="Event latihan">
+  <img class="item grid-4" src="/assets/id/screen4.webp" alt="Cerita karakter">
 </div>

@@ -15,9 +15,9 @@ File-file berikut diperlukan oleh ZokuZoku:
 - `master.mdb` dan `meta`: File-file ini terletak di dalam direktori data game (pada Windows berada di `AppData`, dan pada Android berada di `/data/data`, membutuhkan akses root). Kedua file ini harus berada di folder yang sama, dengan file `meta` di root dan `master.mdb` di subfolder bernama `master`, sehingga strukturnya menjadi `folder/meta` dan `folder/master/master.mdb`. **Jika kamu memiliki UM:PD yang diinstal dari DMM di sistem, kmau tidak perlu khawatir tentang file-file ini, ZokuZoku bisa mendeteksinya secara otomatis!**
 - `localize_dump.json`: File ini berisi data asli `localize_dict` yang diekstrak dari game. Untuk membuat file ini bisa menggunakan Hachimi:
 1. Nyalakan "Mode Translasi" di editor konfig.
-![Editor konfig](/assets/id/translation-guide/using-zokuzoku/1.png)
+![Editor konfig](/assets/id/translation-guide/using-zokuzoku/1.webp)
 2. Opsi baru bernama "Ekstrak Localize_dump" akan muncul di bawah bagian Translasi pada menu. Klik opsi tersebut untuk membuat filenya.
-![Pilihan translasi di menu](/assets/id/translation-guide/using-zokuzoku/2.png)
+![Pilihan translasi di menu](/assets/id/translation-guide/using-zokuzoku/2.webp)
 
 ZokuZoku akan secara otomatis mendeteksi file ini jika dibuat dengan mengikuti prosedur di atas menggunakan versi game DMM, jadi pastikan untuk melakukannya setidaknya sekali sebelum menginstal. Kamu perlu melakukan _dump_ lagi setiap kali klien game diperbarui jika ingin tetap memperbaruinya; jika tidak mengerjakan terjemahan UI, kamu bisa mengabaikannya.
 
@@ -33,14 +33,14 @@ Setelah menginstal ZokuZoku, kamu sekarang bisa membuka repositori terjemahan de
 
 Saat membuka repositori TL untuk pertama kalinya (di mana ZokuZoku telah dikonfigurasi untuk aktif secara otomatis), perintah berikut akan ditampilkan:
 
-![Dependencies install prompt](/assets/id/translation-guide/using-zokuzoku/4.webp)
+![Dependencies install prompt](/assets/translation-guide/using-zokuzoku/4.webp)
 
 Klik OK untuk mulai memasang dependensi, proses ini akan memakan waktu untuk mengunduh dan menginstal (sekitar 200MB). **Selama proses ini, sebuah _command prompt_ akan muncul, jangan ditutup!**
 
 Jika versi DMM telah diinstal pada perangkat, dan kamu telah membuat file `localize_dump` sesuai instruksi di atas, maka perintah berikut akan muncul untuk konfirmasi pada lokasi yang terdeteksi otomatis:
 
-![Game data dir prompt](/assets/id/translation-guide/using-zokuzoku/5.webp)
-![Localize dict dump prompt](/assets/id/translation-guide/using-zokuzoku/6.webp)
+![Game data dir prompt](/assets/translation-guide/using-zokuzoku/5.webp)
+![Localize dict dump prompt](/assets/translation-guide/using-zokuzoku/6.webp)
 
 Jika ada lokasi yang salah, kamu bisa memilih _No_.
 
@@ -50,34 +50,34 @@ Jika ZokuZoku gagal mendeteksi lokasi yang benar untuk instalasi game versi DMM 
 Kamu perlu memulai ulang Visual Studio Code setelah mengubah lokasi data.
 :::
 
-![Extension details](/assets/id/translation-guide/using-zokuzoku/7.webp)
-![Extension settings](/assets/id/translation-guide/using-zokuzoku/8.webp)
+![Extension details](/assets/translation-guide/using-zokuzoku/7.webp)
+![Extension settings](/assets/translation-guide/using-zokuzoku/8.webp)
 
 Selesai! Sekarang kamu siap untuk membuat beberapa terjemahan!
 
 ## Panel utama
 Kamu mungkin telah memperhatikan bahwa sebuah ikon baru telah ditambahkan ke bilah sisi (_sidebar_) setelah kamu menginstal ekstensi. Ini adalah panel ZokuZoku, antarmuka utama untuk menavigasi aset yang bisa diterjemahkan dan meluncurkan editor.
 
-![Main panel](/assets/id/translation-guide/using-zokuzoku/9.webp)
+![Main panel](/assets/translation-guide/using-zokuzoku/9.webp)
 
 Bagian luar dari panel (_all stories, home dialogues,_ dll.) disebut sebagai "_view_". Di dalam _view_ ini terdapat daftar hal-hal yang bisa kamu terjemahkan (mungkin diurutkan ke dalam kategori, tergantung jenis _view_). Mengklik salah satu entri (dalam kategori) akan membuka _dict_ translasi yang sesuai di editor khusus.
 
 Beberapa _view_ akan menampilkan kotak centang di samping nama entri. Kotak ini menunjukkan apakah _dict_ untuk aset tersebut sudah ada atau belum.
 
-![Lyrics view with checkboxes](/assets/id/translation-guide/using-zokuzoku/10.webp)
+![Lyrics view with checkboxes](/assets/translation-guide/using-zokuzoku/10.webp)
 
 ## Mengganti folder terjemahan
 Hal pertama yang mungkin ingin kamu lakukan sebelum mengedit apa pun adalah mengganti folder terjemahan Hachimi (juga dikenal sebagai direktori _localized data_) ke salinan lokal terjemahan kamu. Dengan begitu, Hachimi akan memuat terjemahan dari salinan lokal alih-alih dari repositori _upstream_, sehingga kamu bisa meninjau hasilnya di dalam game jika diperlukan.
 
 Untuk melakukannya, buka tampilan "Hachimi _Controls_" di panel. Klik tombol "_Set translation folder_" untuk menetapkannya. Setelah selesai mengerjakan terjemahan, jangan lupa klik tombol "_Revert translation folder_" untuk mengembalikannya.
 
-![Hachimi Controls view](/assets/id/translation-guide/using-zokuzoku/26.webp)
+![Hachimi Controls view](/assets/translation-guide/using-zokuzoku/26.webp)
 
 ## Editor
 ### Keanehan yang mengganggu
 Sebelum kita masuk ke antarmuka utama editor, mari kita bahas terlebih dahulu sebuah keanehan besar darinya. Cobalah membuka salah satu aset yang belum diterjemahkan (dengan kotak centang di samping namanya tidak tercentang). Sesuatu yang aneh akan terjadi ketika editor dibuka.
 
-![through the magic of buying two of them](/assets/id/translation-guide/using-zokuzoku/11.webp)
+![through the magic of buying two of them](/assets/translation-guide/using-zokuzoku/11.webp)
 
 Kenapa ada dua editor yang terbuka pada saat yang sama? satu adalah editor khusus dan yang lainnya editor teks biasa? Ini merupakan keanehan bawaan dari cara kerja editor Visual Studio Code; menginisialisasi isi dari sebuah file baru akan menyebabkan editor teks terbuka dan “menahan konteks” dari file tersebut
 
@@ -86,12 +86,12 @@ Jika kamu menutup editor teks, editor khusus masih akan tetap terbuka, tetapi ti
 Untungnya, keanehan ini relatif tidak merepotkan jika kamu sudah terbiasa dengan alur kerja tertentu.
 
 - Ketika kmau membuka sebuah aset tetapi tidak ingin menerjemahkannya, tutup tab editor khusus, ini juga akan menutup tab lainnya.
-- Jika kamu memang ingin menerjemahkannya, simpan file terlebih dahulu, editor khusus akan tertutup (keanehan lain!), tetapi sekarang kamu bisa menutup editor teks dan membuka kembali aset dari panel. Semuanya akan berfungsi sebagaimana mestinya.
+- Jika kamu memang ingin menerjemahkannya, simpan file terlebih dahulu, editor khusus akan tertutup (agak laen!), tetapi sekarang kamu bisa menutup editor teks dan membuka kembali aset dari panel. Semuanya akan berfungsi sebagaimana mestinya.
 
 ### Antarmuka umum
 Sebagian besar editor memiliki antarmuka yang sama persis dengan perilaku yang serupa.
 
-![MDB editor](/assets/id/translation-guide/using-zokuzoku/12.webp)
+![MDB editor](/assets/translation-guide/using-zokuzoku/12.webp)
 
 Penggunaan dasar seharusnya sudah jelas; pilih sebuah entri untuk diterjemahkan, lalu masukkan hasil terjemahan kamu di panel "_Translated_". Warna entri menunjukkan status terjemahannya. Jika berwarna abu-abu, berarti entri tersebut belum diterjemahkan.
 
@@ -107,7 +107,7 @@ Kamu bisa memilih beberapa entri dengan menahan tombol Ctrl dan mengklik entri, 
 
 Selain navigasi, _Explorer_ juga menawarkan beberapa fitur tambahan.
 
-![Explorer panel features](/assets/id/translation-guide/using-zokuzoku/13.webp)
+![Explorer panel features](/assets/translation-guide/using-zokuzoku/13.webp)
 
 - Bilah pencarian bisa digunakan untuk mencari entri. Menekan ikon panah tepat di sebelahnya akan menampilkan opsi pencarian. Opsi "_Search in content_" bisa digunakan untuk mencari teks di dalam entri itu sendiri, bukan hanya berdasarkan nama secara bawaan.
 
@@ -119,25 +119,25 @@ Pada judul panel, terdapat 3 tombol, dari kiri ke kanan:
 - **Tombol _Clear_** menghapus konten terjemahan dari entri yang saat ini dipilih.
 
 Sebagai contoh, jika kita hanya memiliki satu entri yang dipilih, maka konten yang disalin (atau di-_fill_) akan langsung ditempatkan ke dalam _slot_ teks dari entri tersebut.
-![An entry with its translated content](/assets/id/translation-guide/using-zokuzoku/14.webp)
+![An entry with its translated content](/assets/translation-guide/using-zokuzoku/14.webp)
 
 Kita menandai entri tersebut untuk disalin, lalu memilih entri lain dan menempelkannya. Sistem akan menanyakan jumlah _slot_ teks yang ingin kamu tempelkan.
 
-![Paste input prompt](/assets/id/translation-guide/using-zokuzoku/15.webp)
+![Paste input prompt](/assets/translation-guide/using-zokuzoku/15.webp)
 
 Kita bisa membiarkannya kosong lalu menekan _Enter_. Konten akan disalin sebagaimana mestinya.
 
-![Another entry, now with the pasted content](/assets/id/translation-guide/using-zokuzoku/16.webp)
+![Another entry, now with the pasted content](/assets/translation-guide/using-zokuzoku/16.webp)
 
 Sekarang apa yang akan terjadi jika kita menandai beberapa entri untuk disalin dan juga menempelkannya ke beberapa entri?
 
-![Selected entries and copying entries](/assets/id/translation-guide/using-zokuzoku/17.webp)
+![Selected entries and copying entries](/assets/translation-guide/using-zokuzoku/17.webp)
 
 Semua entri yang dipilih akan diisi sebagaimana mestinya. Editor akan mengiterasi entri-entri yang dipilih, menempelkan konten dari entri yang disalin, dan ketika mencapai entri salinan terakhir, ia kembali ke entri salinan pertama dan mengulanginya hingga semua entri yang dipilih terisi.
 
-![Third selected entry](/assets/id/translation-guide/using-zokuzoku/18.webp)
+![Third selected entry](/assets/translation-guide/using-zokuzoku/18.webp)
 
-![Fourth selected entry](/assets/id/translation-guide/using-zokuzoku/19.webp)
+![Fourth selected entry](/assets/translation-guide/using-zokuzoku/19.webp)
 
 ::: info
 Perilaku pengisian ini tidak berlaku untuk _slot_ teks. Jika tujuan memiliki lebih banyak _slot_ teks daripada sumber, maka hanya _slot_ teks `n` dari sumber yang akan ditempelkan, sementara _slot_ tambahan akan dibiarkan tidak tersentuh.
@@ -146,14 +146,14 @@ Perilaku pengisian ini tidak berlaku untuk _slot_ teks. Jika tujuan memiliki leb
 ### Editor cerita
 Editor cerita adalah versi diperluas dari editor biasa dengan fitur tambahan untuk terjemahan cerita. Editor ini digunakan untuk cerita utama/karakter/event, dialog beranda, dan dialog latihan.
 
-![Story editor](/assets/id/translation-guide/using-zokuzoku/20.webp)
+![Story editor](/assets/translation-guide/using-zokuzoku/20.webp)
 
 #### Navigasi
 Navigasi dengan tombol panah memiliki peran penting di sini. Tombol Panah Bawah akan membawa kamu ke blok berikutnya dalam cerita tersebut, yang tidak selalu merupakan entri berikutnya dalam daftar.
 
 Sebagai contoh, perhatikan cerita ini yang memiliki blok terpisah untuk _trainer_ laki-laki dan perempuan.
 
-![Male and female trainer blocks](/assets/id/translation-guide/using-zokuzoku/21.webp)
+![Male and female trainer blocks](/assets/translation-guide/using-zokuzoku/21.webp)
 
 Saat ini kami sedang memilih blok nomor 2. Biasanya, menekan Panah Bawah akan membawa ke blok nomor 3; namun, karena urutan logis cerita adalah berpindah dari blok laki-laki atau perempuan ke blok berikutnya, maka navigasi akan langsung melompat ke blok nomor 4.
 
@@ -163,7 +163,7 @@ Sangat disarankan untuk menggunakan tombol panah agar bisa menelusuri _dict_ cer
 
 #### Panel pratinjau
 Tambahan yang paling jelas pada editor adalah dua panel ekstra di sisi kanan serta tombol tambahan pada panel induknya:
-![Preview panels](/assets/id/translation-guide/using-zokuzoku/22.webp)
+![Preview panels](/assets/translation-guide/using-zokuzoku/22.webp)
 
 Panel-panel tersebut adalah panel pratinjau, yang dirancang untuk mereplikasi tampilan cerita dalam game sedekat mungkin. Secara umum, dimensi teks di dalam pratinjau ini sangat akurat, dan bisa dianggap cukup untuk memperkirakan bagaimana tampilannya sebenarnya.
 
@@ -191,7 +191,7 @@ Slot teks pilihan memiliki sebuah "tautan" yang ditetapkan. Cobalah arahkan kurs
 
 Pilihan bisa memiliki variasi untuk pelatih laki-laki dan perempuan. Mari kita lihat sebuah contoh ekstrem:
 
-![Mejiro Dober's story, part 4](/assets/id/translation-guide/using-zokuzoku/23.webp)
+![Mejiro Dober's story, part 4](/assets/translation-guide/using-zokuzoku/23.webp)
 
 Tidak hanya blok cerita ini memiliki varian pilihan untuk laki-laki dan perempuan, blok cerita berikutnya yang dituju (nomor 3 atau 4) juga memiliki varian berdasarkan gender. Jika kita melihat varian perempuan untuk blok ini, kita akan menemukan bahwa ia juga memuat kedua varian pilihan, meskipun sebenarnya hanya ditampilkan untuk trainer perempuan.
 
@@ -199,11 +199,11 @@ Karena sistem yang agak aneh ini, kedua varian pilihan pada blok laki-laki akan 
 
 _Slot_ teks pilihan ini memiliki _tooltip_ untuk menunjukkan gender yang dituju, dan juga diberi kode warna pada panel pratinjau (pilihan normal selalu berwarna hijau, pilihan laki-laki berwarna biru, dan pilihan perempuan berwarna merah muda. Warna ini tidak ditentukan berdasarkan urutan seperti yang terjadi di dalam game)
 
-![Choice text slot tooltip and color coded preview](/assets/id/translation-guide/using-zokuzoku/24.webp)
+![Choice text slot tooltip and color coded preview](/assets/translation-guide/using-zokuzoku/24.webp)
 
 Jenis _slot_ teks terakhir adalah _slot_ teks berwarna. _Slot_ ini digunakan untuk menandai bagian konten yang harus diberi warna. Mari kita lihat sebuah contoh:
 
-![Story block with one color text slot](/assets/id/translation-guide/using-zokuzoku/25.webp)
+![Story block with one color text slot](/assets/translation-guide/using-zokuzoku/25.webp)
 
 _Slot_ teks berwarna ditempatkan setelah semua _slot_ teks lainnya. _Substring_ pertama dalam konten yang cocok dengan potongan teks berwarna akan diberi warna. Panel pratinjau menunjukkan bagaimana hal ini bekerja, tetapi perlu dicatat bahwa warna tersebut hanya untuk tujuan referensi saja, dan mungkin tidak sama dengan warna yang digunakan di dalam game. Pastikan untuk mengikuti urutan sebagaimana ditampilkan pada panel asli agar warna dapat dicocokkan dengan benar.
 

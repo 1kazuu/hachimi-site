@@ -1,7 +1,7 @@
 # GUI Bawaan
 GUI bawaan bisa digunakan untuk mengaktifkan beberapa fungsi dalam game dan mengubah konfigurasi.
 
-![Tangkapan layar GUI](/assets/id/built-in-gui.png)
+![Tangkapan layar GUI](/assets/id/built-in-gui.webp)
 
 ## Membuka Menu
 Menu bisa dibuka dengan menekan tombol atau kombinasi tombol. Ini berbeda untuk setiap platform:
