@@ -86,6 +86,11 @@ Some kernel-level anti-cheats (such as Vanguard, used in Valorant and League of 
     TODO: add more details about weird edge cases like old unsupported versions of CarrotJuicer?
 -->
 
+### The game stopped launching
+
+If Hachimi worked fine before, this likely means the game updated and replaced some modified files.
+Simply reinstall Hachimi.
+
 ### Installer: "Code execution cannot proceed / VCRUNTIME" error
 Install the latest [VC++ redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) matching your device architecture. If you're unsure, it's 99% likely to be `x64`.
 
@@ -147,7 +152,7 @@ Global uses "Umamusume" while JP uses "umamusume".
     ```powershell
     Move-Item "$env:USERPROFILE\AppData\LocalLow\CygamesTEMP\*" "$env:USERPROFILE\AppData\LocalLow\Cygames"
     Remove-Item "$env:USERPROFILE\AppData\LocalLow\CygamesTEMP"
-    ``
+    ```
 
 ### Global Steam and JP DMM versions constantly ask to redownload data
 See [Error 501](#error-501) above.
@@ -218,7 +223,7 @@ If you *don't* have a Data Link password, you will need to uninstall the patched
 After that, you can repeat the patching process and then log in using the created Data Link password.
 Alternatively, you may log in to a Cygames ID to link your account data.
 
-### この端末でのプレイは許可されていません (You are not permitted to play on this device) error
+### You are not permitted to play on this device (この端末でのプレイは許可されていません) error
 
 #### Your device is rooted
  Make sure your connection is stable and that the device is passing at least **DEVICE_INTEGRITY** on the Play Integrity servers (you can verify this using the [Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck) app). If it passes, hiding root from the game using **Magisk's built-in DenyList** (enable *Enforce DenyList* if it doesn't work) should make it work. Other tools such as **Shamiko** may also do the trick.
@@ -228,8 +233,12 @@ Alternatively, you may log in to a Cygames ID to link your account data.
 
 ### I/O error: Permission denied (os error 13)
 
-This could happen due to the new scoped storage introduced on Android 10, which makes Hachimi fail to create its data directory. 
-To workaround this, open your file manager, go to Android/media and create a folder named "jp.co.cygames.umamusume". Relaunch the game and the problem should be fixed.
+Due to the new scoped storage introduced in Android 10, Hachimi can fail to create its data directory.  
+1. Close the game. 
+1. Open your file manager and navigate to `Android/media`.
+1. Create a folder named `jp.co.cygames.umamusume` if needed.
+1. Inside the newly created folder, create another folder named `hachimi`.
+1. Relaunch the game.
 
 ### I/O error: File exists (os error 17)
 
@@ -237,9 +246,13 @@ Reboot your device and try launching the game again. If the error persists, ask 
 
 ### Crashing after launch
 
-This might be needed for some devices and emulators:  
-Open your file manager and navigate to `Android/media`. Create a folder named "jp.co.cygames.umamusume". 
-Inside of that folder, create a folder named "hachimi". Finally, download [this config file](https://files.leadrdrk.com/hachimi/android-compat/config.json) and put it inside the "hachimi" folder (make sure that it's called "config.json").
+This might be needed for some devices and emulators.
+1. Follow [os error 13](#i-o-error-permission-denied-os-error-13) first, but don't launch the game yet.
+1. Download [this config file](https://files.leadrdrk.com/hachimi/android-compat/config.json) and put it inside the `hachimi` folder (make sure that it's called `config.json`).
+
+### Missing translation selection during first time setup
+
+See [os error 13](#i-o-error-permission-denied-os-error-13).
 
 ### Mismatched taps
 Open Hachimi's menu -> Config Editor and play with the virtual resolution multiplier to find which value works best.
