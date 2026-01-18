@@ -29,7 +29,7 @@ hero:
 features:
   - icon: 🚀
     title: Easy to use
-    details: Comes with an installer and convenient in-game GUI. Translations update automatically.
+    details: Comes with an installer, convenient in-game GUI, and automatic updates.
   - icon: 🌍
     title: Multilingual translations
     details: Indexes translations from different community projects, allowing easy access and source switching. Check credits for a list.
@@ -43,17 +43,24 @@ features:
 
 ## About
 
-Hachimi Edge is a working fork of the unmaintained Hachimi mod. It was made to quickly serve issues fixed after the game update on 2025/09/24 to users, and has since incorporated additional features and fixes by various community members. Hachimi not working? Runtime errors? Patching failed? You are likely still using the original Hachimi. Uninstall it and install the new Edge version to resolve issues. Should Hachimi's developer return, Edge will likely be merged back and discontinued.
+Hachimi Edge is the third full translation mod for the game, following in the footsteps of UmaTL and Carotene, and the first to fully support game modding on Android.
+
+A fork of the unmaintained Hachimi mod, it began as a way to quickly serve fixes for issues after the game update on 2025/09/24 to users, and has since incorporated additional features and fixes by various community members. 
+The original Hachimi mod has been officially discontinued by its developer on 2026/01/17. Hachimi Edge will take its place.
+
+Hachimi not working? Runtime errors? Patching failed? You are likely still using the original Hachimi. Uninstall it and [install](/docs/hachimi/getting-started) the new Edge version to resolve issues.
 
 ## UmaPatcher
 
-UmaPatcher is a helper app to easily patch Hachimi into the game on android. It also has an Edge version, which applies Hachimi Edge.
+UmaPatcher Edge is a helper app to easily patch Hachimi Edge into the game on android. As integral part of the Hachimi project, it too is a fork of the old and unmaintained UmaPatcher.
 The latest Hachimi Edge version is automatically downloaded when patching, so you don't have to worry about anything else on Android.
 
 ## Translations
 
-Translation sources are indexed from various separate community projects. Hachimi provides a framework to modify the game, it does not do or manage any translations itself, and has nothing to do with these sources.
+Translation sources are indexed from various external community projects. Hachimi provides a framework to modify the game, but does not do or manage any translations itself and has nothing to do with these sources.
+
 Not finding translations for newer content? Looking for a different language? Hachimi Edge indexes more and up-to-date repositories than the original.
+
 Check out the sources in more detail on the [credits page](credits.md) for general info, progress, help, and getting in contact.
 Try to support the contributors working on them!
 
