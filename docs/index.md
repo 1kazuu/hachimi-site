@@ -6,7 +6,8 @@ Check out all topics on the left sidebar. On mobile, you can find them in the me
 Check out the [Getting Started](/docs/hachimi/getting-started) page.
 
 ## Contributing as a translator
-Hachimi Edge needs translators for its UI, site, and guides. If you would like to help with this, join the [Discord](https://discord.gg/hachimimod) and mention the `Developer` role.
+Hachimi Edge needs translators for its UI, site/docs, and user support. If you would like to help with this, join the [Discord](https://discord.gg/hachimimod) and mention the `Developer` role.
+For the site, you can also contribute directly to [its GitHub repo](https://github.com/UmaTL/hachimi-site).
 
 To help with game translations, check out the [Translation Guide](/docs/translation-guide/welcome) and contact [one of the external projects](/credits.md).
 
