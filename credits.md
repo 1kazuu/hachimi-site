@@ -6,24 +6,18 @@
 - Original Author: LeadRDRK ([Hachimi](https://github.com/Hachimi-Hachimi/Hachimi))
 - Edge Maintainer: harveyhans
 - Contributors:
-<a href="https://github.com/kairusds/Hachimi-Edge/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kairusds/Hachimi-Edge" />
-</a>
+  [![Graph](https://contrib.rocks/image?repo=kairusds/Hachimi-Edge)](https://github.com/kairusds/Hachimi-Edge/graphs/contributors)
 
 ## [Website](https://github.com/UmaTL/hachimi-site)
 - Orignal Author: LeadRDRK
 - Edge Maintainer: noccu
 - Contributors:
-<a href="https://github.com/UmaTL/hachimi-site/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=UmaTL/hachimi-site" />
-</a>
+  [![Graph](https://contrib.rocks/image?repo=UmaTL/hachimi-site)](https://github.com/UmaTL/hachimi-site/graphs/contributors)
 
 ## [English translations](https://github.com/UmaTL/hachimi-tl-en)
 - Maintainer: noccu
 - Contributors:
-  <a href="https://github.com/UmaTL/hachimi-tl-en/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=UmaTL/hachimi-tl-en" />
-  </a>
+  [![Graph](https://contrib.rocks/image?repo=UmaTL/hachimi-tl-en)](https://github.com/UmaTL/hachimi-tl-en/graphs/contributors)
 - [Full credits & Progress](https://github.com/UmaTL/hachimi-tl-en/wiki/Translation-Progress)
 
 Alternate versions:
@@ -33,27 +27,19 @@ Alternate versions:
 ## [Simplified Chinese translations](https://github.com/Hachimi-Hachimi/tl-zh-cn/)
 - Maintainer: yingyingyingqwq
 - Contributors:
-<a href="https://github.com/Hachimi-Hachimi/tl-zh-cn/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Hachimi-Hachimi/tl-zh-cn" />
-</a>
+  [![Graph](https://contrib.rocks/image?repo=Hachimi-Hachimi/tl-zh-cn)](https://github.com/Hachimi-Hachimi/tl-zh-cn/graphs/contributors)
 
 ## [Traditional Chinese translations](https://github.com/Hachimi-Hachimi/tl-zh-tw/)
 - Maintainer: yotv2000tw
 - Contributors:
-<a href="https://github.com/Hachimi-Hachimi/tl-zh-tw/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Hachimi-Hachimi/tl-zh-tw" />
-</a>
+  [![Graph](https://contrib.rocks/image?repo=Hachimi-Hachimi/tl-zh-tw)](https://github.com/Hachimi-Hachimi/tl-zh-tw/graphs/contributors)
 
 ## [Indonesian translations](https://github.com/Xmatography/umachimi-id)
 - Maintainer: Xmatography
 - Contributors:
-<a href="https://github.com/Xmatography/umachimi-id/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Xmatography/umachimi-id" />
-</a>
+  [![Graph](https://contrib.rocks/image?repo=Xmatography/umachimi-id)](https://github.com/Xmatography/umachimi-id/graphs/contributors)
 
 ## [French translations (Global)](https://umamusumefr.github.io)
 - Maintainer: UmamusumeFR (?)
 - Contributors:
-<a href="https://github.com/UmamusumeFR/hachimi-tl-fr/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=UmamusumeFR/hachimi-tl-fr" />
-</a>
+  [![Graph](https://contrib.rocks/image?repo=UmamusumeFR/hachimi-tl-fr)](https://github.com/UmamusumeFR/hachimi-tl-fr/graphs/contributors)
