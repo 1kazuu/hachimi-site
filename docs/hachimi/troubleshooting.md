@@ -71,7 +71,7 @@ Don't update your translations until you know the source has updated. You can al
 First of all, there might not be updates. This should be indicated by a "No updates found" message.
 If this message doesn't show and you use a VPN to access the game, turn it off during the update phase.
 
-If you used Hachimi before the Edge version, your list of translation sources might be outdated. Change the Meta URL in the first time setup to `https://gitlab.com/umatl/hachimi-meta/-/raw/main/meta.json` or reset your settings.
+If you used Hachimi before the Edge version, your list of translation sources might be outdated. Change the Meta URL in the first time setup to `https://gitlab.com/umatl/hachimi-meta/-/raw/main/meta.json` or reset your settings, then complete the setup with a new source.
 
 ### Physics (hair, clothing, etc.) are stiff when running at 60+ FPS
 
